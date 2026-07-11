@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio website for Techpule, an independent music producer, voicebank creator, and vocal synth enthusiast."
+    />
+    <meta name="theme-color" content="#070910" />
+    <meta property="og:title" content="Techpule" />
+    <meta
+      property="og:description"
+      content="Original music, UTAU voicebanks, DiffSinger models, and vocal synthesis projects."
+    />
+    <meta property="og:type" content="website" />
+    <title>Techpule | Music Producer & Vocal Synth Creator</title>
+    <link rel="preload" href="assets/provided/images/techpule-background.png" as="image" />
+    <link rel="stylesheet" href="styles.css?v=20260711-download-button" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <nav class="nav">
+        <a class="brand" href="#home" aria-label="Techpule home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Techpule</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a href="#about">About</a>
+          <a href="#music">Music</a>
+          <a href="#voicebanks">Voicebanks</a>
+          <a href="#announcements">Announcements</a>
+          <a href="#contact">Contact</a>
+          <a href="admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="home" aria-labelledby="hero-title">
+        <img class="hero-bg" src="assets/provided/images/techpule-background.png" alt="" aria-hidden="true" />
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Independent vocal synthesis lab</p>
+          <h1 id="hero-title">Techpule</h1>
+          <p class="hero-subtitle">Music Producer &bull; Voicebank Creator &bull; Vocal Synth Enthusiast</p>
+          <a class="glow-button" href="#music">Listen to Music</a>
+        </div>
+        <div class="hero-meter" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Original music and synthetic voices, shaped with care.</h2>
+        </div>
+        <div class="about-layout">
+          <article class="glass-panel reveal">
+            <p>
+              Techpule creates original electronic music, instrumental arrangements, UTAU voicebanks,
+              DiffSinger models, and experimental vocal synthesis projects. The work blends emotional
+              songwriting with technical sound design, treating voice as both instrument and interface.
+            </p>
+            <p>
+              From voicebank recording and tuning to polished releases, each project is built for creators
+              who love expressive synthetic vocals, detailed production, and clean futuristic sound.
+            </p>
+          </article>
+          <div class="stats-grid reveal" aria-label="Project focus areas">
+            <div><strong>UTAU</strong><span>Voicebank design</span></div>
+            <div><strong>DiffSinger</strong><span>Model experiments</span></div>
+            <div><strong>Originals</strong><span>Electronic tracks</span></div>
+            <div><strong>Tools</strong><span>Vocal workflows</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="music" aria-labelledby="music-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Music</p>
+          <h2 id="music-title">Instrumental versions of Techpule's original works.</h2>
+          <p>
+            These are instrumental mixes only. You can hear the full original songs with vocals on
+            <a class="text-link" href="https://youtube.com/@techpule" target="_blank" rel="noreferrer">Techpule's YouTube channel</a>.
+          </p>
+        </div>
+        <div class="card-grid music-grid" data-music-list></div>
+        <button class="outline-button show-all-button" type="button" data-show-all-songs>Show All Songs</button>
+      </section>
+
+      <section class="section" id="voicebanks" aria-labelledby="voicebanks-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Voicebanks</p>
+          <h2 id="voicebanks-title">Downloadable voices for vocal synthesis projects.</h2>
+        </div>
+        <div class="card-grid voicebank-grid" data-voicebank-list></div>
+      </section>
+
+      <section class="section" id="announcements" aria-labelledby="announcements-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Announcements</p>
+          <h2 id="announcements-title">Project updates, releases, and development notes.</h2>
+        </div>
+        <div class="timeline" data-announcement-list></div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Find Techpule around the web.</h2>
+        </div>
+        <div class="social-grid reveal">
+          <a href="https://youtube.com/@techpule" target="_blank" rel="noreferrer">YouTube</a>
+          <a href="https://discord.gg/HzDGSCUA3R" target="_blank" rel="noreferrer">Discord Server</a>
+          <a href="mailto:azothtp@gmail.com">azothtp@gmail.com</a>
+          <a href="mailto:techpulemusic@gmail.com">techpulemusic@gmail.com</a>
+        </div>
+        <div class="contact-card reveal">
+          <span>Discord Username</span>
+          <strong>techpule_</strong>
+        </div>
+      </section>
+    </main>
+
+    <aside class="player" data-player aria-label="Global music player">
+      <audio data-audio preload="metadata" muted></audio>
+      <div class="player-main">
+        <img data-cover src="assets/provided/images/instrumental-cover.jpg" alt="" />
+        <div class="player-copy">
+          <span class="player-label">Now Playing</span>
+          <strong data-title>Broken Fairy Tale</strong>
+        </div>
+        <button type="button" class="icon-button" data-minimize aria-label="Minimize player">_</button>
+      </div>
+      <div class="player-controls">
+        <button type="button" class="icon-button" data-shuffle aria-label="Shuffle playlist">Shuf</button>
+        <button type="button" class="icon-button" data-prev aria-label="Previous track">Prev</button>
+        <button type="button" class="play-button" data-play aria-label="Play">Play</button>
+        <button type="button" class="icon-button" data-next aria-label="Next track">Next</button>
+        <button type="button" class="icon-button" data-repeat aria-label="Repeat playlist">Rep</button>
+      </div>
+      <label class="progress-wrap" aria-label="Track progress">
+        <span data-current>0:00</span>
+        <input data-progress type="range" min="0" max="0" step="0.1" value="0" />
+        <span data-duration>0:00</span>
+      </label>
+      <label class="volume-wrap">
+        <span>Volume</span>
+        <input data-volume type="range" min="0" max="1" step="0.01" value="0.7" />
+      </label>
+      <div class="queue-tools">
+        <button type="button" class="outline-button" data-reset-queue>Reset Queue</button>
+      </div>
+      <ol class="playlist" data-playlist aria-label="Playlist"></ol>
+    </aside>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Techpule. Original music and vocal synthesis projects.</p>
+      <div>
+        <a href="#music">Music</a>
+        <a href="#voicebanks">Voicebanks</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js?v=20260711-text-restore"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Techpule Admin</title>
+    <link rel="stylesheet" href="styles.css?v=20260711-admin-panel" />
+  </head>
+  <body class="admin-page">
+    <main class="admin-shell">
+      <section class="admin-login glass-panel" data-login-panel>
+        <p class="eyebrow">Admin</p>
+        <h1>Techpule Admin</h1>
+        <label>
+          <span>Password</span>
+          <input type="password" data-password autocomplete="current-password" />
+        </label>
+        <button class="glow-button" type="button" data-login>Log In</button>
+        <p class="admin-message" data-login-message></p>
+      </section>
+
+      <section class="admin-dashboard" data-dashboard hidden>
+        <div class="admin-topbar">
+          <div>
+            <p class="eyebrow">Dashboard</p>
+            <h1>Manage Website</h1>
+          </div>
+          <div class="admin-actions">
+            <a class="outline-button" href="index.html">View Site</a>
+            <button class="outline-button" type="button" data-export>Export Backup</button>
+            <button class="outline-button" type="button" data-logout>Log Out</button>
+          </div>
+        </div>
+
+        <div class="admin-tabs" role="tablist">
+          <button class="is-active" type="button" data-tab="songs">Songs</button>
+          <button type="button" data-tab="voicebanks">Voicebanks</button>
+          <button type="button" data-tab="announcements">Announcements</button>
+        </div>
+
+        <section class="admin-panel is-active" data-panel="songs">
+          <div class="admin-panel-head">
+            <h2>Songs</h2>
+            <button class="glow-button" type="button" data-add-song>Add Song</button>
+          </div>
+          <div class="admin-list" data-song-admin-list></div>
+        </section>
+
+        <section class="admin-panel" data-panel="voicebanks">
+          <div class="admin-panel-head">
+            <h2>Voicebanks</h2>
+            <button class="glow-button" type="button" data-add-voicebank>Add Voicebank</button>
+          </div>
+          <div class="admin-list" data-voicebank-admin-list></div>
+        </section>
+
+        <section class="admin-panel" data-panel="announcements">
+          <div class="admin-panel-head">
+            <h2>Announcements</h2>
+            <button class="glow-button" type="button" data-add-announcement>Add Announcement</button>
+          </div>
+          <div class="admin-list" data-announcement-admin-list></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="admin.js?v=20260711-admin-panel"></script>
+  </body>
+</html>
